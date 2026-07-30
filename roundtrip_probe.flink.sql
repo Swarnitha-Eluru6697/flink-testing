@@ -1,2 +1,0 @@
--- round trip check
--- INSERT INTO snk SELECT 1;
