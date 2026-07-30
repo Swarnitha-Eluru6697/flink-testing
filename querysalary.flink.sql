@@ -1,3 +1,16 @@
+-- FlinkSQL streaming job
+--
+-- A job is three parts:
+--   1. CREATE TABLE for each source  — Kafka topic, CDC stream, …
+--   2. CREATE TABLE for each sink    — lakehouse table, Kafka topic, …
+--   3. INSERT INTO <sink> SELECT … FROM <source>
+--
+-- Connector settings go in each table's WITH ( … ) clause.
+--
+-- ⌘↵          syntax-check this file against the FlinkSQL runner
+-- ⌘K          ask the AI chat to generate the pipeline for you
+-- Deploy      commit and push, then register the repo under FlinkSQL → Jobs
+
 -- ==========================================================
 -- SOURCE TABLE
 -- ==========================================================
